@@ -1,0 +1,25 @@
+
+body {
+    font-family: $fuente;
+    background-color: $color_fondo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid;
+    margin: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+    margin: 20px auto 7px;
+}
+
+

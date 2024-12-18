@@ -1,0 +1,53 @@
+.intro {
+    padding: 0 30px;
+}
+
+.niveles-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    
+}
+
+.nivel-selec {
+    background-color: $color_prim_trans;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+
+    img {
+        // width:100px;
+        
+        flex-grow: 1;
+    }
+    
+    button {
+        width: 75%;
+        padding: 10px;
+        letter-spacing: 0.2rem;
+        border: solid 2px $color_prim;
+        border-radius: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: $color_prim;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}

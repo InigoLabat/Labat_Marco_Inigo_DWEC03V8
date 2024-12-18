@@ -1,0 +1,73 @@
+// Variables de colores
+$primary-color: #007bff;
+$background-color: #f9f9f9;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$button-hover-color: #e6f7ff;
+
+// Sección texto de resultados
+.texto-result {
+    margin: 30px auto;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+// Sección tiempo empleado
+.result {
+    margin: 20px auto;
+
+    .tiempo-container {
+        border: 2px solid $color_prim;
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        background-color: #fff;
+        text-align: center;
+
+        span {
+        font-weight: bold;
+        font-size: 1.5rem;
+        }
+    }
+}
+
+// Botones finales
+.botones-final {
+    margin: 30px auto;
+
+    .botones-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: $color-prim-trans;
+        border-radius: 10px;
+        padding: 20px;
+
+        .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: $color_prim;
+        border: 2px solid $color_prim;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $color_prim;
+            color: #000;
+            }
+        }
+    }
+}

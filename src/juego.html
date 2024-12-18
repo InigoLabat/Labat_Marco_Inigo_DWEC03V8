@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.min.css" type="text/css">
+    <title>Juego</title>
+</head>
+
+<body>
+    <main class="juego-main">
+        <!-- Temporizador -->
+        <aside id="timer-cont" class="tempo">
+            <p>Tiempo de sesión:</p>
+            <span id="timer">00:00</span>
+        </aside>
+
+        <!-- Tablero donde se colocan las cartas del juego -->
+        <section id="tablero-cont" class="tablero">
+            <!-- Las cartas del tablero se generarán dinámicamente aquí -->
+        </section>
+
+        <!-- Botones para acciones de juego -->
+        <aside id="botones-cont" class="botones-cont">
+            <button id="start-game" disabled>Empezar</button>
+            <button id="solve-game">Resolver</button>
+        </aside>
+    </main>
+
+    <!-- Mazo donde estarán las cartas para arrastrar -->
+    <section id="mazo-cont" class="mazo-cont">
+        <div class="mazo">
+            <p id="texto-mazo">Haz clic en el mazo para coger una carta.</p>
+            <!-- Las cartas del mazo se generarán dinámicamente aquí -->
+            <div id="mazo-pila" class="mazo-pila"></div>
+        </div>
+        <div id="mazo-seleccionada" class="mazo-seleccionada"></div>
+        <p id="texto-selec" class="texto-selec">Arrastra la carta hasta su pareja en la parte superior.</p>
+    </section>
+
+    <script src="../js/juego.js"></script>
+</body>
+</html>
